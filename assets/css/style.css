@@ -29,6 +29,22 @@ header {
 
     justify-content: space-between;
 
+    position: -webkit-sticky;
+
+    position: sticky;
+
+    top: 0;
+
+    background-image: url("../image/hero-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    background-position: 80%;
+
 }
 
 header h1 {
@@ -40,6 +56,8 @@ header h1 {
     color: #fce138;
 
     margin: 0;
+
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -84,6 +102,20 @@ header nav ul li a {
     font-weight: lighter;
 
     font-size: 1.55vw;
+
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+header nav ul li a:hover {
+
+    background: #fce138;
+
+    color: #024e76;
+
+    border-radius: 15px;
+
+    text-shadow: none;
 
 }
 
@@ -137,12 +169,6 @@ section {
 
 .hero {
 
-    background-image: url("../image/hero-bg.jpg");
-
-    background-size: cover;
-
-    background-position: center;
-
     display: flex;
 
     flex-wrap: wrap;
@@ -150,6 +176,10 @@ section {
     justify-content: center;
 
     align-items: flex-start;
+
+    background-attachment: fixed;
+
+    background-position: 80%;
 
 }
 
@@ -176,13 +206,15 @@ section {
 
     color: #fce138;
 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .hero-form {
 
     border: solid 3px #024e76;
 
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, 0.8);
 
     padding: 20px;
 
@@ -191,6 +223,10 @@ section {
     width: 40%;
 
     margin: 3.5%;
+
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    border-radius: 15px;
 
 }
 
@@ -224,6 +260,18 @@ section {
 
     margin-bottom: 15px;
 
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+.form-input:focus {
+
+    background-color: rgba(255, 255, 255, 1);
+
+    outline: none;
+
 }
 
 .hero-form label {
@@ -244,8 +292,15 @@ section {
 
     font-size: 16px;
 
+    border-radius: 10px;
+
 }
 
+.hero-form button:hover {
+
+    background-color: #39a6b2;
+
+}
 
 .intro p {
 
@@ -314,6 +369,12 @@ section {
     align-items: center;
 
     justify-content: space-between;
+
+}
+
+.step:last-child {
+
+    border-bottom: none;
 
 }
 
@@ -534,9 +595,40 @@ section {
 
     margin-top: 5px;
 
+    border-radius: 10px;
+
 }
 
-.conta button {
+.contact-form textarea {
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+.contact-form textarea:focus {
+
+    background-color: rgba(255, 255, 255, 1);
+
+    outline: none;
+
+}
+
+.contact-form input {
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+.contact-form input:focus {
+
+    background-color: rgba(255, 255, 255, 1);
+
+    outline: none;
+
+}
+
+
+.contact-form button {
 
     width: 100%;
 
@@ -551,6 +643,16 @@ section {
     padding: 15px 0;
 
     font-size: 16px;
+
+    border-radius: 10px;
+
+}
+
+.contact-form button:hover {
+
+    color: #fce138;
+
+    background: #39a6b2;
 
 }
 
@@ -567,6 +669,8 @@ section {
         padding-bottom: 0;
 
         justify-content: center;
+
+        position: relative;
 
     }
 
